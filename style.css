@@ -8,7 +8,7 @@ h2 {
     font-weight: 500;
     margin-bottom: 50px;
     margin-top: 40px;
-    font-size: 64px;
+    font-size: 44px;
     font-family: cursive;
 }
 
@@ -47,7 +47,26 @@ p {
 .will-fadeIn:nth-child(odd) {
     background: linear-gradient(45deg, #FFC3A0, #FFAFBD);
 }
-
+/* RESPONSIVE */
+@media screen and (max-width: 1366px) {
+    h2 {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 16px;
+    }
+    .will-fadeIn{
+        width: 90%;
+        /* margin: 0 auto; */
+    }
+}
 
 .fadeInRight {
     -webkit-animation: fadeInRight .5s ease .4s both;
@@ -56,6 +75,8 @@ p {
     -o-animation: fadeInRight .5s ease .4s both;
     animation: fadeInRight .5s ease .4s both;
 }
+
+
 @media (prefers-reduced-motion) {
     .fadeInRight .animated {
     -webkit-animation: unset !important;
